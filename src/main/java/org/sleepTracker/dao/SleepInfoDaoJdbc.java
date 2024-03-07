@@ -1,9 +1,11 @@
 package org.sleepTracker.dao;
 
 import org.sleepTracker.dao.connector.Connector;
+import org.sleepTracker.dao.connector.PSQLConnector;
 import org.sleepTracker.dao.model.Mood;
 import org.sleepTracker.dao.model.SleepInfo;
 import org.sleepTracker.logger.Logger;
+import org.sleepTracker.logger.LoggerBase;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -16,9 +18,9 @@ public class SleepInfoDaoJdbc implements SleepInfoDAO {
   private Logger logger;
   private Connector connector;
 
-  public SleepInfoDaoJdbc(Logger logger, Connector connector) {
-    this.logger = logger;
-    this.connector = connector;
+  public SleepInfoDaoJdbc() {
+    this.logger = new LoggerBase();
+    this.connector = new PSQLConnector();
   }
 
   @Override
