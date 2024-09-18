@@ -1,6 +1,6 @@
 <a id="readme-top"></a>
 
-# El Proyecte Grande
+# Sleep Time Tracker
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -59,7 +59,7 @@
    git clone git@github.com:Kekalma/Sleep-time-tracker.git
    ```
 2. Installations:
-   Install a version of JDK
+   Install JDK 17
    
    Install IDE
    Install VSCode
